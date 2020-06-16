@@ -13,11 +13,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textView.text = "Hello!";
+        showText()
+    }
+    
+    func showText() {
+        textView.text = UIPasteboard.general.string
     }
     
     @IBAction func trashWasPressed(_ sender: Any) {
-        textView.text = "Button clicked!";
     }
 }
 
