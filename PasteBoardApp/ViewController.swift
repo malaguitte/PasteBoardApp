@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         textView.text = "Hello!";
     }
-
-
+    
+    @IBAction func trashWasPressed(_ sender: Any) {
+        textView.text = "Button clicked!";
+    }
 }
 
