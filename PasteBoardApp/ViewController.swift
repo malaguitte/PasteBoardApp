@@ -16,6 +16,10 @@ class ViewController: UIViewController {
         showText()
     }
     
+    func addText() {
+        showText()
+    }
+    
     func showText() {
         textView.text = UIPasteboard.general.string
     }
