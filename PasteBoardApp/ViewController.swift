@@ -48,6 +48,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func trashWasPressed(_ sender: Any) {
+        self.clearTextView()
+        pastedText.removeAll()
+        UserDefaults.standard.removeObject(forKey: DATA_KEY)
     }
 }
 
